@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#101927">
+  <meta name="color-scheme" content="dark light">
+  <script>try{const p=JSON.parse(localStorage.getItem('clearframe-ui-preferences-v1')||'{}');document.documentElement.dataset.theme=p.darkMode===false&&p.colorTheme!=='terminal'?'light':'dark';document.documentElement.dataset.colorTheme=['midnight','amethyst','ocean','terminal'].includes(p.colorTheme)?p.colorTheme:'midnight';document.documentElement.dataset.textTheme=['modern','bookish','mono'].includes(p.textTheme)?p.textTheme:'modern';document.documentElement.dataset.matchFade=p.softMatchEdges===false?'false':'true';if(p.largeText)document.documentElement.dataset.textSize='large';if(p.reducedMotion)document.documentElement.dataset.reducedMotion='true';}catch{document.documentElement.dataset.theme='dark';document.documentElement.dataset.colorTheme='midnight';document.documentElement.dataset.textTheme='modern';document.documentElement.dataset.matchFade='true';}</script>
+  <meta name="description" content="Clearframe V15: an expanded, chapter-attributed relational reflection atlas based on Nichols and Davis, 12th edition.">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" type="image/svg+xml" href="./icon.svg">
+  <link rel="apple-touch-icon" href="./icon-192.png">
+  <link rel="stylesheet" href="./style.css?v=20261111-v15l">
+  <link rel="stylesheet" href="./preferences.css?v=20261111-v15l">
+  <title>Clearframe V15 — Relational Pattern Atlas</title>
+  <script defer src="./v10-catalog.js?v=20261111-v15l"></script>
+  <script defer src="./v10-book1-additions.js?v=20261111-v15l"></script>
+  <script defer src="./v10-source-expansion.js?v=20261111-v15l"></script>
+  <script defer src="./v10-role-examples.js?v=20261111-v15l"></script>
+  <script defer src="./v10-clinical-names.js?v=20261111-v15l"></script>
+  <script defer src="./v10-source-index.js?v=20261111-v15l"></script>
+  <script defer src="./reasoner.js?v=20261111-v15l"></script>
+  <script defer src="./store.js?v=20261111-v15l"></script>
+  <script defer src="./perspective.js?v=20261111-v15l"></script>
+  <script defer src="./interpretive-engine.js?v=20261111-v15l"></script>
+  <script defer src="./matcher.js?v=20261111-v15l"></script>
+  <script defer src="./app.js?v=20261111-v15l"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Clearframe home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span><strong>clearframe</strong><small>V15 · CHAPTER-BY-CHAPTER ATLAS</small></span></a>
+      <div class="nav-section-label">YOUR WORKSPACE</div>
+      <nav class="nav-list" aria-label="Workspace">
+        <a href="#home" data-nav="home"><span class="nav-icon">✦</span> Process an emotion</a>
+        <a href="#atlas" data-nav="atlas"><span class="nav-icon">◎</span> Pressure-Point Atlas</a>
+        <a href="#dictionary" data-nav="dictionary"><span class="nav-icon">▤</span> Pattern dictionary</a>
+        <a href="#evidence" data-nav="evidence"><span class="nav-icon">◈</span> Present-day signals</a>
+        <a href="#source" data-nav="source"><span class="nav-icon">▣</span> Book 1 source map</a>
+        <a href="#moments" data-nav="moments"><span class="nav-icon">◷</span> Saved moments</a>
+      </nav>
+      <div class="nav-section-label second-group">YOUR CONFIGURATION</div>
+      <nav class="nav-list" aria-label="Configuration">
+        <a href="#roles" data-nav="roles"><span class="nav-icon">♧</span> Roles & themes</a>
+        <a href="#preferences" data-nav="preferences"><span class="nav-icon">⚙</span> Preferences</a>
+        <a href="#data" data-nav="data"><span class="nav-icon">⌑</span> Data & privacy</a>
+      </nav>
+      <div class="sidebar-end">
+        <div class="sidebar-note"><span class="sidebar-note-dot"></span><strong>Patterns are hypotheses.</strong><p>A feeling is real. Its explanation still deserves a fair check.</p></div>
+        <div class="sidebar-footer">Private by default · Works offline</div>
+      </div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar"><button id="menu-toggle" class="icon-button mobile-only" aria-label="Open menu" aria-expanded="false">☰</button><span id="breadcrumb" class="breadcrumb">Workspace / Process an emotion</span><span class="topbar-right"><span class="status-dot"></span>V15 · 15 chapters mapped</span></header>
+      <main id="app" class="main-content" tabindex="-1" aria-live="polite"><div class="loading-state">Opening your atlas…</div></main>
+    </div>
+  </div>
+  <dialog id="detail-dialog" class="modal"><div id="dialog-content"></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <noscript><p class="nojs">Clearframe needs JavaScript enabled. All processing happens within your browser; no account or server is used for your entries.</p></noscript>
+</body>
+</html>
